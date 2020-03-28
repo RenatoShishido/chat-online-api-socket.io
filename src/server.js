@@ -8,7 +8,7 @@ var server = app.listen(3000, function(){
     console.log('listening on port ${PORT},');
 });
 
-// Static files
+// Static files using express.static and withing path for routes of folder
 app.use(express.static('public'));
 
 // Socket setup & pass server
